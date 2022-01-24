@@ -1,6 +1,6 @@
 body
 {
-    color: orange;
+    color: rgb(110, 109, 109);
     font-family: Arial;
     font-size: 16px;
     margin: 0;
@@ -10,12 +10,32 @@ body
 
 #cabecera
 {
-    background: #33A;
+    align-items: center;
+    background: rgb(195, 32, 201);
     box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.5);
     color: white;
+    display: flex;
+    flex-wrap: wrap;
     font-weight: bold;
+    justify-content: center;
     margin: 0;
-    padding: 0.5em;
+    text-align: left;
+}
+
+#cabecera > *:nth-child(1) {
+    flex: 1 1 40px;
+}
+#cabecera > * {
+    flex: 1 1 35%;
+}
+
+#cabecera .logo{
+    text-align: center;
+}
+#cabecera .logo img{  
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
 }
 
 #cabecera #tagline
